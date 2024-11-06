@@ -4,7 +4,7 @@ using namespace std;
 
 struct address {
 	string city;
-	int sn; //streat number
+	int sna; //streat number
 };
 
 struct Food {
@@ -35,7 +35,7 @@ rest define(rest r[10]) {
 		cout << "\ncity:";
 		cin >> r[i].adr.city;
 		cout << "\nstreet number:";
-		cin >> r[i].adr.sn;
+		cin >> r[i].adr.sna;
 		cout << "\ndayoff of restaurant:";
 		getline(cin, r[i].df);
 		cout << "\nid of food:";
@@ -56,7 +56,7 @@ int print(rest r[10]) {
 		cout << "name of restaurant:" << r[i].name1 << endl;
 		cout << "phone number of restaurant:" << r[i].pn << endl;
 		cout << "city:" << r[i].adr.city << endl;
-		cout << "street number:" << r[i].adr.sn << endl;
+		cout << "street number:" << r[i].adr.sna << endl;
 		cout << "dayoff of restaurant:" << r[i].df << endl;
 		cout << "id of food:" << r[i].f.id << endl;
 		cout << "food  type name:" << r[i].f.name << endl;
