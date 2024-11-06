@@ -10,7 +10,7 @@ struct address {
 struct Food {
 	long id;
 	string name;
-	float ap; //avarage price
+	float apa; //avarage price
 };
 
 struct rest {
@@ -44,7 +44,7 @@ rest define(rest r[10]) {
 		getline(cin, r[i].f.name);
 		getline(cin, r[i].f.name);
 		cout << "\navarage price:";
-		cin >> r[i].f.ap;
+		cin >> r[i].f.apa;
 	}
 	return r[10];
 }
@@ -60,7 +60,7 @@ int print(rest r[10]) {
 		cout << "dayoff of restaurant:" << r[i].df << endl;
 		cout << "id of food:" << r[i].f.id << endl;
 		cout << "food  type name:" << r[i].f.name << endl;
-		cout << "avarage price:" << r[i].f.ap << endl;
+		cout << "avarage price:" << r[i].f.apa << endl;
 	}
 	return 0;
 }
@@ -97,7 +97,7 @@ int s_r(string y, rest r[10]) {
 int s_p(rest r[10]) {
 	int flag = 0;
 	for (int i = 0; i < 10; i++) {
-		if (r[i].f.ap > 500) {
+		if (r[i].f.apa > 500) {
 			cout << "found calls  " << r[i].f.name << "in" << r[i].name1;
 			flag = 1;
 		}
